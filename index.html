@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome\css\all.css">
+
+    <!-- Css personal -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>TP DESIBO 2018</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="row" style="margin-top:20px;">
+        <div class="col-md-12">
+          <h1 style="font-size:34px;">TRABAJO PRÁCTICO</h1>
+          <h2 style="font-size:18px;color:#333;">Desarrollo de Sistemas de Información Basados en Ontologías</h2>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:30px; margin-bottom:20px;">
+          <div class="col-md-12">
+              <h2 style="margin-left:20px; color:#651FFF;">ANYWHERE</h2>
+              <!-- <button id="btn-cargarCursos" class="btn btn-info" type="button" name="button">CARGAR CURSOS</button> -->
+          </div>
+      </div>
+
+
+      <!-- Especializaciones y Alumnos -->
+      <div class="row">
+
+        <!-- Especializaciones -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <i class="far fa-bookmark"></i>
+              <h5 style="display:inline; margin-left:10px;">Especializaciones</h5>
+            </div>
+            <div class="card-body">
+
+              <table id="tabla_especial" class="table">
+                  <tbody>
+                  </tbody>
+              </table>
+
+            </div> <!-- /card-body -->
+          </div> <!-- /card -->
+        </div> <!-- /col-md-6 | especializaciones -->
+
+        <!-- Alumnos -->
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <i class="far fa-user"></i>
+              <h5 style="display:inline; margin-left:10px;">Alumnos</h5>
+            </div>
+            <div class="card-body">
+
+              <table id="tabla_alumnos" class="table">
+                  <tbody>
+                  </tbody>
+              </table>
+
+            </div> <!-- /card-body -->
+          </div> <!-- /card -->
+        </div> <!-- /col-md-6 | alumnos -->
+
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+
+
+    <div id="modal_alumno" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-header">
+                <i class="far fa-file-alt"></i>
+                <h5 style="display:inline; margin-left:10px;">Cursos</h5>
+              </div>
+              <div class="card-body">
+
+                <table id="tabla_cursos_alumno" class="table">
+                    <tbody>
+                    </tbody>
+                </table>
+
+              </div> <!-- /card-body -->
+            </div> <!-- /card -->
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-md-12">
+                <span style="color:#888;">Certificado de cursado</span>
+                <i class="fas fa-certificate" style="color:orange;"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <span style="color:#888;">Certificado de aprobación</span>
+                <i class="fas fa-certificate" style="color:green;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /modal -->
+
+    <div id="modal_especial" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Modal title</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="precio" style="text-align:center;margin-bottom:20px;">
+              <h6 style="color:#888;">COSTO DE LA ESPECIALIZACIÓN</h6>
+              <span style="font-size:20px;">$
+              </span><h3 class="costo_especializacion" style="display:inline;font-size:32px;color:#00E676;"></h3>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <i class="far fa-file-alt"></i>
+                <h5 style="display:inline; margin-left:10px;">Cursos</h5>
+              </div>
+              <div class="card-body">
+
+                <table id="tabla_cursos" class="table">
+                    <tbody>
+                    </tbody>
+                </table>
+
+              </div> <!-- /card-body -->
+            </div> <!-- /card -->
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div> <!-- /modal -->
+
+    <!-- JQuery -->
+    <script src="jquery.js" charset="utf-8"></script>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap.min.js" charset="utf-8"></script>
+
+    <!-- Script personal -->
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
