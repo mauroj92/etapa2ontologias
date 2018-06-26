@@ -1,0 +1,1190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#"
+     xml:base="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_curso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_curso">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_especializacion -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_especializacion">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_integradora -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_integradora">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_parcial -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_parcial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_alumno -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_alumno">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_curso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_curso">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_alumno -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_alumno">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_curso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_curso">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_integradora -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_integradora">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_parcial -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_parcial">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#inscripto_en -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#inscripto_en">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeAprobado -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeAprobado">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeCursado -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeCursado">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#pertenece_a -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#pertenece_a">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_alumno -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_alumno">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_curso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_curso">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_ordenCurso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_ordenCurso">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionCurso -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionCurso">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionEspecialización -->
+
+    <owl:ObjectProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionEspecialización">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#alumno_tiene_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#alumno_tiene_nombre">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_tiene_costo -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_tiene_costo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_finalizacion -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_finalizacion">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_inicio -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_inicio">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_ID">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_costo -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_costo">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_nombre">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_ID">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_costo -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_costo">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_finalizacion -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_finalizacion">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_inicio -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_inicio">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_nombre">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#puede_hacerse_aislado -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#puede_hacerse_aislado">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_nroOrden -->
+
+    <owl:DatatypeProperty rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_nroOrden">
+        <rdfs:domain rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_curso"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#abona_especializacion"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_integradora"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#aprueba_evaluacion_parcial"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeAprobado"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#obtiene_certificadoDeCursado"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#inscripto_en"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_alumno"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_de_curso"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeAprobado_tiene_costo"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_alumno"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#certificadoDeCursado_de_curso"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_alumno"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_alumno"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#pertenece_a"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_finalizacion"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#comision_tiene_fecha_inicio"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionCurso"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_ID"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_costo"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_nombre"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#puede_hacerse_aislado"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#curso_tiene_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_planificacionEspecialización"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_ID"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_costo"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_finalizacion"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_fecha_inicio"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_nombre"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#especializacion_tiene_ID"/>
+        </owl:hasKey>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_curso"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_nroOrden"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_parcial"/>
+                        <owl:someValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_integradora"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#define_integradora"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion -->
+
+    <owl:Class rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_ordenCurso"/>
+                        <owl:someValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#tiene_ordenCurso"/>
+                        <owl:allValuesFrom rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Aldo_Duscher -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Aldo_Duscher">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <abona_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2"/>
+        <aprueba_evaluacion_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C2"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C2"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C2"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C2"/>
+        <inscripto_en rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C2"/>
+        <alumno_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aldo Duscher</alumno_tiene_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <tiene_planificacionCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C1"/>
+        <curso_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1</curso_tiene_ID>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</curso_tiene_costo>
+        <curso_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">La toolbox del cientifico de datos</curso_tiene_nombre>
+        <puede_hacerse_aislado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</puede_hacerse_aislado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <tiene_planificacionCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C2"/>
+        <curso_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2</curso_tiene_ID>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">990.0</curso_tiene_costo>
+        <curso_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Programacion en R</curso_tiene_nombre>
+        <puede_hacerse_aislado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</puede_hacerse_aislado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <curso_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20</curso_tiene_ID>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">790.0</curso_tiene_costo>
+        <curso_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentos de liderazgo cotidiano</curso_tiene_nombre>
+        <puede_hacerse_aislado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</puede_hacerse_aislado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <tiene_planificacionCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C26"/>
+        <curso_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C26</curso_tiene_ID>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</curso_tiene_costo>
+        <curso_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aprendizaje Automatizado</curso_tiene_nombre>
+        <puede_hacerse_aislado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</puede_hacerse_aislado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+        <tiene_planificacionCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C3"/>
+        <curso_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C3</curso_tiene_ID>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</curso_tiene_costo>
+        <curso_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obtención y limpieza de datos</curso_tiene_nombre>
+        <puede_hacerse_aislado rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</puede_hacerse_aislado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CA-Duscher-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CA-Duscher-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+        <certificadoDeAprobado_de_alumno rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Aldo_Duscher"/>
+        <certificadoDeAprobado_de_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CA-Sorrentin-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CA-Sorrentin-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+        <certificadoDeAprobado_de_alumno rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Juan_Pablo_Sorrentin"/>
+        <certificadoDeAprobado_de_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Duscher-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Duscher-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+        <certificadoDeCursado_de_alumno rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Aldo_Duscher"/>
+        <certificadoDeCursado_de_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Duscher-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Duscher-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+        <certificadoDeCursado_de_alumno rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Aldo_Duscher"/>
+        <certificadoDeCursado_de_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Sorrentin-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Sorrentin-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+        <certificadoDeCursado_de_alumno rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Juan_Pablo_Sorrentin"/>
+        <certificadoDeCursado_de_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <pertenece_a rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C1"/>
+        <comision_tiene_fecha_finalizacion rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-02T00:00:00</comision_tiene_fecha_finalizacion>
+        <comision_tiene_fecha_inicio rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-02-02T00:00:00</comision_tiene_fecha_inicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <pertenece_a rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2"/>
+        <comision_tiene_fecha_finalizacion rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T00:00:00</comision_tiene_fecha_finalizacion>
+        <comision_tiene_fecha_inicio rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-04T00:00:00</comision_tiene_fecha_inicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <pertenece_a rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+        <pertenece_a rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26"/>
+        <comision_tiene_fecha_finalizacion rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-08-30T00:00:00</comision_tiene_fecha_finalizacion>
+        <comision_tiene_fecha_inicio rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-03-20T00:00:00</comision_tiene_fecha_inicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#E1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#E1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <tiene_planificacionEspecialización rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E1"/>
+        <especializacion_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E1</especializacion_tiene_ID>
+        <especializacion_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8300.0</especializacion_tiene_costo>
+        <especializacion_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciencia de Datos</especializacion_tiene_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#E3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#E3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+        <tiene_planificacionEspecialización rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E3"/>
+        <curso_tiene_costo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4450.0</curso_tiene_costo>
+        <especializacion_tiene_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E3</especializacion_tiene_ID>
+        <especializacion_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gestión y Liderazgo Estratégico</especializacion_tiene_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP4-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP4-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Juan_Pablo_Sorrentin -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Juan_Pablo_Sorrentin">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <abona_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C26"/>
+        <abona_especializacion rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#E3"/>
+        <aprueba_evaluacion_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C20"/>
+        <aprueba_evaluacion_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C26"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C20"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C26"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C26"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C26"/>
+        <aprueba_evaluacion_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP4-C26"/>
+        <inscripto_en rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C20"/>
+        <inscripto_en rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Com1_C26"/>
+        <obtiene_certificadoDeAprobado rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CA-Sorrentin-C26"/>
+        <obtiene_certificadoDeCursado rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CC-Sorrentin-C26"/>
+        <alumno_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan Pablo Sorrentín</alumno_tiene_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <tiene_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C1"/>
+        <tiene_nroOrden rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tiene_nroOrden>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <tiene_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C2"/>
+        <tiene_nroOrden rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</tiene_nroOrden>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <tiene_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C3"/>
+        <tiene_nroOrden rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</tiene_nroOrden>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E3-C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E3-C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+        <tiene_curso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#C20"/>
+        <tiene_nroOrden rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</tiene_nroOrden>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <define_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C1"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C1"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C2 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C2">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <define_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C2"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C2"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C2"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C20 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C20">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <define_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C20"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C26 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C26">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <define_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C26"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C26"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C26"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP3-C26"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP4-C26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-C3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+        <define_integradora rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EI-C3"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP1-C3"/>
+        <define_parcial rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EP2-C3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E1 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E1">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+        <tiene_ordenCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C1"/>
+        <tiene_ordenCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C2"/>
+        <tiene_ordenCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E1-C3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E3 -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#P-E3">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+        <tiene_ordenCurso rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OC-E3-C20"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Scaloni_Lionel -->
+
+    <owl:NamedIndividual rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Scaloni_Lionel">
+        <rdf:type rdf:resource="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+        <alumno_tiene_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scaloni Lionel</alumno_tiene_nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Alumno"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeAprobado"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#CertificadoDeCursado"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Comision"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Curso"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#Especializacion"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionIntegradora"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#EvaluacionParcial"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#OrdenCurso"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionCurso"/>
+            <rdf:Description rdf:about="http://cidisi.frsf.utn.edu.ar/desibo/tp/gold-ontology#PlanificacionEspecializacion"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
